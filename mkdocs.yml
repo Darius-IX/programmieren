@@ -1,1 +1,32 @@
-site_name: My Docs
+site_name: Programmieren lernen
+site_url: https://darius-ix.github.io/programmieren/
+
+extra:
+  generator: false
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Willkommen:
+    - Wer bin ich?: willkommen/wer-bin-ich.md
+    - Motivation: willkommen/motivation.md
