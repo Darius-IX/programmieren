@@ -6,17 +6,18 @@ extra:
 
 theme:
   name: material
+  language: de
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Zu dark mode wechseln
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Zu light mode wechseln
   features:
     - navigation.expand
     - navigation.sections
@@ -25,8 +26,29 @@ theme:
     - search.highlight
     - content.code.copy
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 nav:
   - Home: index.md
   - Willkommen:
     - Wer bin ich?: willkommen/wer-bin-ich.md
     - Motivation: willkommen/motivation.md
+  - Greenfoot: 
+    - GUI: greenfoot/GUI.md
+    - Input: greenfoot/input.md
+    - Movement: greenfoot/movement.md
+  - Java: 
+    - Datentypen: java/datentypen.md
+    - Funktionen: java/funktionen.md
+    - Schleifen: java/schleifen.md
+
+
+# Code Snippets Page
+# Copy world for tasks
